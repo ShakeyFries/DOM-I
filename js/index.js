@@ -15,7 +15,7 @@ const siteContent = {
   },
   "main-content": {
     "features-h4":"Features",
-    "features-content": "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
+    "features-content": "Features content  elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
     "about-h4":"About",
     "about-content": "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
     "middle-img-src": "img/mid-page-accent.jpg",
@@ -97,7 +97,7 @@ for (let i = 0; i < navBar.length; i++){
   navBar[i].style.color = "green"
 }
 
-
+// appendChild / prepend
 let nav = document.querySelector("nav");
 let a = document.createElement('a');
 let a2 = document.createElement('a');
@@ -109,3 +109,12 @@ a.setAttribute('href', "#")
 a2.setAttribute('href', "#")
 a.style.color = 'green';
 a2.style.color = 'green';
+
+
+//stretch
+for (let i = 0; i < mainHeader.length; i++){
+  mainHeader[i].style.color = "purple"
+}
+
+title.style.color = 'red';
+
