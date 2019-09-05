@@ -60,6 +60,7 @@ navBar[3].textContent = siteContent["nav"]["nav-item-4"];
 navBar[4].textContent = siteContent["nav"]["nav-item-5"];
 navBar[5].textContent = siteContent["nav"]["nav-item-6"];
 
+
 // Dom is Awesome
 let title = document.querySelector("h1" );
 title.textContent = siteContent["cta"]["h1"];
@@ -89,3 +90,22 @@ mainText[6].textContent = siteContent["contact"]["phone"];
 mainText[7].textContent = siteContent["contact"]["email"];
 mainText[8].textContent = siteContent["footer"]["copyright"];
 
+/* Task 3 
+Green Nav */
+
+for (let i = 0; i < navBar.length; i++){
+  navBar[i].style.color = "green"
+}
+
+
+let nav = document.querySelector("nav");
+let a = document.createElement('a');
+let a2 = document.createElement('a');
+nav.prepend(a);
+nav.appendChild(a2);
+a.textContent = "Head";
+a2.textContent = "Butt";
+a.setAttribute('href', "#")
+a2.setAttribute('href', "#")
+a.style.color = 'green';
+a2.style.color = 'green';
